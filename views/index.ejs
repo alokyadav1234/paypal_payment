@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Payment app</title>
+</head>
+<body>
+    <h1>Node Payment App</h1>
+    <h2>Pay Fee Rs 100</h2>
+    <form action="/pay" method="POST">
+       <!-- <input type="text" name="price" value =""/>
+        <input type="text" name="quantity" value =""/> -->
+        <table>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+          </thead>
+        <tbody>
+            <tr>
+              <td>Monitor</td>
+              <td><div class="input-field col s12"><select name="quantity">
+                <option value="" disabled selected>Choose your quantity</option>
+                <option  value="1"> 1</option>
+                <option  value="2"> 2</option>
+                <option  value="3"> 3</option>
+              </select></div></td>
+              <td>$10<input type="hidden" name="price" value ="10"/></td>
+              <td><button type="submit">Buy</button></td>
+              
+            </tr>
+            
+          </tbody>
+       
+        </table>
+    </form>
+</body>
+</html>
